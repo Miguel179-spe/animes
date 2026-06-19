@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24_7Anime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 Header with logo and menu button -->
+  <header class="header">
+    <img src="public/images/24_7anime.png" alt="Logo" class="logo">
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- 🔹 Sidebar Menu -->
+  <nav id="sidebar" class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Hindi Anime</a></li>
+      <li><a href="#">Genres</a></li>
+      <li><a href="#">Popular</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Search bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search anime...">
+  </div>
+
+  <!-- 🔹 Anime Grid -->
+  <div class="anime-grid" id="animeGrid">
+    <div class="anime-card" onclick="window.location.href='naruto.html'">
+  <img src="public/images/naruto1.jpg" alt="Naruto">
+  <p>Naruto</p>
+</div>
+
+    <div class="anime-card" onclick="openAnime('onepiece.html')">
+      <img src="public/images/anime2.jpg" alt="One Piece">
+      <p>One Piece</p>
+    </div>
+
+    <div class="anime-card" onclick="openAnime('demon.html')">
+      <img src="public/images/anime3.jpg" alt="Demon Slayer">
+      <p>Demon Slayer</p>
+    </div>
+
+    <div class="anime-card" onclick="openAnime('aot.html')">
+      <img src="public/images/anime4.jpg" alt="Attack on Titan">
+      <p>Attack on Titan</p>
+    </div>
+  </div>
+
+<script src="watchNow.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

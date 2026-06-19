@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advertisement</title>
+</head>
+<body style="background:#111;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;">
+
+<h2>Advertisement</h2>
+<p>Click skip to continue</p>
+<button id="skipAd" style="padding:10px 20px;font-size:18px;cursor:pointer;">Skip Ad</button>
+
+<script>
+document.getElementById("skipAd").addEventListener("click", function(){
+    localStorage.setItem("adSkipped", new Date().getTime());
+    const nextEp = localStorage.getItem("nextEpisode") || "https://samplelink.com";
+    window.location.href = nextEp; // 🔹 Redirect to example link
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naruto - 24_7Anime</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #222;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      width: 120px;
+    }
+
+    .anime-container {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap; /* Mobile me wrap kare */
+    }
+
+    .anime-cover {
+      flex: 1;
+      min-width: 150px;
+      max-width: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .anime-info {
+      flex: 2;
+      min-width: 200px;
+    }
+
+    .anime-info h1 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+    }
+
+    .anime-info p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .watch-btn {
+      display: inline-block;
+      background: #e91e63;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .episode-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .episode-card {
+      background: #222;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .episode-card:hover {
+      transform: scale(1.05);
+      background: #e91e63;
+    }
+
+    /* Responsive: Mobile me cover upar aur description niche */
+    @media screen and (max-width: 600px) {
+      .anime-container {
+        flex-direction: column;
+        padding: 10px;
+      }
+      .anime-cover {
+        width: 100%;
+        max-width: 100%;
+      }
+      .anime-info {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="public/images/24_7anime.png" alt="Logo">
+    <a href="index.html" style="color:#fff;text-decoration:none;font-weight:bold;">Back</a>
+  </header>
+
+  <!-- Anime Cover + Info -->
+  <div class="anime-container">
+    <img src="public/images/naruto_cover.jpg" alt="Naruto Cover" class="anime-cover">
+    <div class="anime-info">
+      <h1>Naruto</h1>
+      <p>
+        Naruto Uzumaki, a young ninja with a sealed demon fox inside him, dreams of becoming the strongest ninja 
+        and earning the respect of his village. Follow Naruto’s journey, friendships, and epic battles as he grows 
+        stronger with every challenge.
+      </p>
+      <a href="#" class="watch-btn">Watch Now</a>
+    </div>
+  </div>
+
+  <!-- Episode List -->
+  <div class="episode-list" id="episodeList">
+    <div class="episode-card">Episode 1</div>
+    <div class="episode-card">Episode 2</div>
+    <div class="episode-card">Episode 3</div>
+    <div class="episode-card">Episode 4</div>
+    <div class="episode-card">Episode 5</div>
+    <div class="episode-card">Episode 6</div>
+    <div class="episode-card">Episode 7</div>
+    <div class="episode-card">Episode 8</div>
+    <div class="episode-card">Episode 9</div>
+    <div class="episode-card">Episode 10</div>
+  </div>
+<script src="watchNow.js"></script>
+<script src="naruto.js"></script>
+</body>
+</html> 
+
+
+
+
